@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to WeatherDemo"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zip Code: "
+            />
+        <EditText
+            android:id="@+id/main_zipCode"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="Zip Code"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_zipSubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Weather for Zip"
+        />
+    
+    <Button
+        android:id="@+id/main_locationSubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Weather for Location"
+        />
+
+</LinearLayout>
+
