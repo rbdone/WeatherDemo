@@ -29,6 +29,7 @@ public class MainActivity extends Activity
                 Log.d(TAG, "Clicked Button");
                 String zipCode = ((EditText)findViewById(R.id.main_zipCode)).getText().toString();
                 callWeatherAPI(zipCode);
+                
             }
         });
     }
