@@ -39,16 +39,14 @@ public class MainActivity extends Activity
 
         // Make API call.
         
-        String jsonData = "{\"forecastHourlyList\":[{\"chancePrecip\":null,\"dateTime\":1282122000000,\"desc\":\n" +
-                "\"Thunderstorms\",\"dewPoint\":null,\"feelsLike\":null,\"feelsLikeLabel\":null,\"humidity\":null,\n" +
-                "\"icon\":\"cond006\",\"skyCover\":null,\"temperature\":73,\"windDir\":null,\"windSpeed\":null}, \n" +
-                ".\n" +
-                ".\n" +
-                ".\n" +
-                "{\"chancePrecip\":null,\"dateTime\":1282680000000,\"desc\":\"Partly Cloudy\",\"dewPoint\":null,\n" +
-                "\"feelsLike\":null,\"feelsLikeLabel\":null,\"humidity\":null,\"icon\":\"cond002\",\"skyCover\":null,\n" +
-                "\"temperature\":76,\"windDir\":null,\"windSpeed\":null}],\"temperatureUnits\":\"°F\",\n" +
-                "\"windUnits\":\"mph\"}";
+        String jsonData = "{\"forecastHourlyList\":[{\"chancePrecip\":null,\"dateTime\":1282122000000,\"desc\":" +
+                "\"Thunderstorms\",\"dewPoint\":null,\"feelsLike\":null,\"feelsLikeLabel\":null,\"humidity\":null," +
+                "\"icon\":\"cond006\",\"skyCover\":null,\"temperature\":73,\"windDir\":null,\"windSpeed\":null}]}";
+
+//                "{\"chancePrecip\":null,\"dateTime\":1282680000000,\"desc\":\"Partly Cloudy\",\"dewPoint\":null," +
+//                "\"feelsLike\":null,\"feelsLikeLabel\":null,\"humidity\":null,\"icon\":\"cond002\",\"skyCover\":null," +
+//                "\"temperature\":76,\"windDir\":null,\"windSpeed\":null}],\"temperatureUnits\":\"°F\"," +
+//                "\"windUnits\":\"mph\"}";
         
         // Parse Data.
         Gson gson = new Gson();
