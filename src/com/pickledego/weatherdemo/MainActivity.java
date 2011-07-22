@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.gson.*;
+import com.pickledego.weatherdemo.model.ForecastHourlyList;
+
 public class MainActivity extends Activity
 {
     private static String TAG = "MainActivity";
@@ -48,6 +51,10 @@ public class MainActivity extends Activity
                 "\"windUnits\":\"mph\"}";
         
         // Parse Data.
+        Gson gson = new Gson();
+        ForecastHourlyList forecast = gson.fromJson(jsonData, ForecastHourlyList.class);
+
+        Toast.makeText(getBaseContext(), "This is great " + forecast.temperature, Toast.LENGTH_LONG).show();
 
         // Display data in a Toast.
         Toast.makeText(getBaseContext(), "This is great " + zipCode, Toast.LENGTH_LONG).show();
